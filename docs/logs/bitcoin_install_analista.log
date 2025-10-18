@@ -1,0 +1,273 @@
+[🕒] Inicio de la instalación: lun 14 jul 2025 21:08:29 CEST
+
+[+] Verificando requisitos del sistema...
+
+[Información del sistema]
+Usuario actual     : root
+Fecha y hora       : lun 14 jul 2025 21:08:29 CEST
+Nombre de host     : torino
+Sistema operativo  : Ubuntu 24.04.2 LTS
+Versión del kernel : 6.8.0-63-generic
+Arquitectura       : x86_64
+
+[CPU]
+Modelo CPU         : Intel(R) Core(TM) i5-8400 CPU @ 2.80GHz
+Núcleos disponibles: 6
+
+[Memoria RAM]
+Total: 15Gi | Libre: 14Gi
+
+[Disco principal (/)]
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sda2       1,8T   20G  1,7T   2% /
+
+[Discos detectados]
+NAME     SIZE TYPE MOUNTPOINT
+sda      1,8T disk 
+├─sda1   512M part /boot/efi
+└─sda2   1,8T part /
+sr0     1024M rom  
+
+[Evaluación]
+
+[+] Verificación de requisitos completada.
+
+¿Desea continuar con la instalación? [S/n]: [✘] Bitcoin Core no está instalado.
+
+Bitcoin Core no está instalado. ¿Qué desea hacer?
+1) Instalación completa
+2) Instalación por perfil
+3) Salir
+Seleccione una opción: 
+[+] Instalando dependencias básicas...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://es.archive.ubuntu.com/ubuntu noble InRelease
+Get:2 http://security.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+Get:3 http://es.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+Get:4 http://es.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+Get:5 http://security.ubuntu.com/ubuntu noble-security/main i386 Packages [308 kB]
+Get:6 http://es.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1.238 kB]
+Get:7 http://security.ubuntu.com/ubuntu noble-security/main amd64 Packages [986 kB]
+Get:8 http://security.ubuntu.com/ubuntu noble-security/main Translation-en [175 kB]
+Get:9 http://security.ubuntu.com/ubuntu noble-security/main amd64 Components [21,5 kB]
+Get:10 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1.373 kB]
+Get:11 http://es.archive.ubuntu.com/ubuntu noble-updates/main i386 Packages [491 kB]
+Get:12 http://es.archive.ubuntu.com/ubuntu noble-updates/main amd64 Components [163 kB]
+Get:13 http://security.ubuntu.com/ubuntu noble-security/restricted Translation-en [294 kB]
+Get:14 http://es.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Components [212 B]
+Get:15 http://es.archive.ubuntu.com/ubuntu noble-updates/universe i386 Packages [668 kB]
+Get:16 http://security.ubuntu.com/ubuntu noble-security/restricted amd64 Components [212 B]
+Get:17 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Packages [872 kB]
+Get:18 http://es.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1.105 kB]
+Get:19 http://security.ubuntu.com/ubuntu noble-security/universe i386 Packages [540 kB]
+Get:20 http://security.ubuntu.com/ubuntu noble-security/universe Translation-en [192 kB]
+Get:21 http://security.ubuntu.com/ubuntu noble-security/universe amd64 Components [52,2 kB]
+Get:22 http://security.ubuntu.com/ubuntu noble-security/multiverse amd64 Components [212 B]
+Get:23 http://es.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Components [377 kB]
+Get:24 http://es.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Components [940 B]
+Get:25 http://es.archive.ubuntu.com/ubuntu noble-backports/main amd64 Components [7.084 B]
+Get:26 http://es.archive.ubuntu.com/ubuntu noble-backports/restricted amd64 Components [216 B]
+Get:27 http://es.archive.ubuntu.com/ubuntu noble-backports/universe amd64 Components [28,3 kB]
+Get:28 http://es.archive.ubuntu.com/ubuntu noble-backports/multiverse amd64 Components [212 B]
+Fetched 9.270 kB in 2s (4.236 kB/s)
+Reading package lists...
+Building dependency tree...
+Reading state information...
+55 packages can be upgraded. Run 'apt list --upgradable' to see them.
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+build-essential is already the newest version (12.10ubuntu1).
+cmake is already the newest version (3.28.3-1build7).
+pkgconf is already the newest version (1.8.1-2build1).
+python3 is already the newest version (3.12.3-0ubuntu2).
+libevent-dev is already the newest version (2.1.12-stable-9ubuntu2).
+libboost-dev is already the newest version (1.83.0.1ubuntu2).
+libsqlite3-dev is already the newest version (3.45.1-1ubuntu2.3).
+libzmq3-dev is already the newest version (4.3.5-1build2).
+jq is already the newest version (1.7.1-3build1).
+0 upgraded, 0 newly installed, 0 to remove and 55 not upgraded.
+[✔] Dependencias instaladas.
+
+[+] Verificando existencia del usuario 'bitcoin'...
+[✔] Usuario 'bitcoin' ya existe.
+[✔] Directorio /opt/BLOCKCHAIN creado y asignado a usuario bitcoin.
+
+[+] Clonando repositorio Bitcoin Core v29.0...
+fatal: destination path '/home/bitcoin/bitcoin' already exists and is not an empty directory.
+HEAD is now at f490f5562d Merge bitcoin/bitcoin#32252: [29.x] doc: minor rel notes changes
+
+[+] ¿Desea compilar con soporte para ZMQ?
+[s/N]: 
+[+] Compilando Bitcoin Core...
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE dot) 
+
+Configuring secp256k1 subtree...
+-- Could NOT find Valgrind (missing: Valgrind_INCLUDE_DIR Valgrind_WORKS) 
+
+
+secp256k1 configure summary
+===========================
+Build artifacts:
+  library type ........................ Static
+Optional modules:
+  ECDH ................................ OFF
+  ECDSA pubkey recovery ............... ON
+  extrakeys ........................... ON
+  schnorrsig .......................... ON
+  musig ............................... OFF
+  ElligatorSwift ...................... ON
+Parameters:
+  ecmult window size .................. 15
+  ecmult gen table size ............... 86 KiB
+Optional features:
+  assembly ............................ x86_64
+  external callbacks .................. OFF
+Optional binaries:
+  benchmark ........................... OFF
+  noverify_tests ...................... ON
+  tests ............................... ON
+  exhaustive tests .................... ON
+  ctime_tests ......................... OFF
+  examples ............................ OFF
+
+Cross compiling ....................... FALSE
+Valgrind .............................. OFF
+Preprocessor defined macros ........... ENABLE_MODULE_ELLSWIFT=1 ENABLE_MODULE_SCHNORRSIG=1 ENABLE_MODULE_EXTRAKEYS=1 ENABLE_MODULE_RECOVERY=1 ECMULT_WINDOW_SIZE=15 COMB_BLOCKS=43 COMB_TEETH=6 USE_ASM_X86_64=1
+C compiler ............................ GNU 13.3.0, /usr/bin/cc
+CFLAGS ................................ 
+Compile options ....................... -pedantic -Wall -Wcast-align -Wcast-align=strict -Wextra -Wnested-externs -Wno-long-long -Wno-overlength-strings -Wno-unused-function -Wshadow -Wstrict-prototypes -Wundef
+Build type:
+ - CMAKE_BUILD_TYPE ................... RelWithDebInfo
+ - CFLAGS ............................. -O2 -g 
+ - LDFLAGS for executables ............ 
+ - LDFLAGS for shared libraries ....... 
+
+
+
+Configure summary
+=================
+Executables:
+  bitcoind ............................ ON
+  bitcoin-node (multiprocess) ......... OFF
+  bitcoin-qt (GUI) .................... OFF
+  bitcoin-gui (GUI, multiprocess) ..... OFF
+  bitcoin-cli ......................... ON
+  bitcoin-tx .......................... ON
+  bitcoin-util ........................ ON
+  bitcoin-wallet ...................... ON
+  bitcoin-chainstate (experimental) ... OFF
+  libbitcoinkernel (experimental) ..... OFF
+Optional features:
+  wallet support ...................... ON
+   - descriptor wallets (SQLite) ...... ON
+   - legacy wallets (Berkeley DB) ..... OFF
+  external signer ..................... ON
+  ZeroMQ .............................. ON
+  USDT tracing ........................ OFF
+  QR code (GUI) ....................... OFF
+  DBus (GUI, Linux only) .............. OFF
+Tests:
+  test_bitcoin ........................ ON
+  test_bitcoin-qt ..................... OFF
+  bench_bitcoin ....................... OFF
+  fuzz binary ......................... OFF
+
+Cross compiling ....................... FALSE
+C++ compiler .......................... GNU 13.3.0, /usr/bin/c++
+CMAKE_BUILD_TYPE ...................... RelWithDebInfo
+Preprocessor defined macros ........... 
+C++ compiler flags .................... -O2 -g -std=c++20 -fPIC -fno-extended-identifiers -fdebug-prefix-map=/home/bitcoin/bitcoin/src=. -fmacro-prefix-map=/home/bitcoin/bitcoin/src=. -fstack-reuse=none -Wall -Wextra -Wformat -Wformat-security -Wvla -Wredundant-decls -Wdate-time -Wduplicated-branches -Wduplicated-cond -Wlogical-op -Woverloaded-virtual -Wsuggest-override -Wimplicit-fallthrough -Wunreachable-code -Wbidi-chars=any -Wundef -Wno-unused-parameter -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=3 -Wstack-protector -fstack-protector-all -fcf-protection=full -fstack-clash-protection
+Linker flags .......................... -O2 -g -fstack-reuse=none -fstack-protector-all -fcf-protection=full -fstack-clash-protection -Wl,-z,relro -Wl,-z,now -Wl,-z,separate-code -fPIE -pie
+
+NOTE: The summary above may not exactly match the final applied build flags
+      if any additional CMAKE_* or environment variables have been modified.
+      To see the exact flags applied, build with the --verbose option.
+
+Attempt to harden executables ......... ON
+Treat compiler warnings as errors ..... OFF
+Use ccache for compiling .............. OFF
+
+
+-- Configuring done (0.6s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/bitcoin/bitcoin/build
+[  0%] Generating bitcoin-build-info.h
+[  1%] Built target secp256k1_precomputed
+[  2%] Built target univalue
+[  2%] Built target crc32c
+[  4%] Built target bitcoin_consensus
+[  8%] Built target bitcoin_crypto
+[ 19%] Built target unitester
+[ 20%] Built target bitcoin_cli
+[ 23%] Built target minisketch
+[ 24%] Built target bitcoin_zmq
+[ 24%] Built target generate_build_info
+[ 25%] Built target noverify_tests
+[ 25%] Built target object
+[ 25%] Built target tests
+[ 26%] Built target exhaustive_tests
+[ 33%] Built target leveldb
+[ 33%] Built target bitcoin_clientversion
+[ 33%] Built target secp256k1
+[ 38%] Built target bitcoin_util
+[ 41%] Built target test_util
+[ 50%] Built target bitcoin_common
+[ 56%] Built target bitcoin_wallet
+[ 57%] Built target bitcoin-cli
+[ 57%] Built target bitcoin-tx
+[ 57%] Built target bitcoin-util
+[ 57%] Built target bitcoin-wallet
+[ 74%] Built target bitcoin_node
+[ 74%] Built target bitcoind
+[100%] Built target test_bitcoin
+-- Install configuration: "RelWithDebInfo"
+-- Installing: /usr/local/bin/bitcoin-wallet
+-- Up-to-date: /usr/local/share/man/man1/bitcoin-wallet.1
+-- Installing: /usr/local/bin/bitcoind
+-- Up-to-date: /usr/local/share/man/man1/bitcoind.1
+-- Installing: /usr/local/bin/bitcoin-cli
+-- Up-to-date: /usr/local/share/man/man1/bitcoin-cli.1
+-- Installing: /usr/local/bin/bitcoin-tx
+-- Up-to-date: /usr/local/share/man/man1/bitcoin-tx.1
+-- Installing: /usr/local/bin/bitcoin-util
+-- Up-to-date: /usr/local/share/man/man1/bitcoin-util.1
+-- Up-to-date: /usr/local/bin/test_bitcoin
+[✔] Bitcoin Core compilado e instalado.
+
+[+] Configurando servicio systemd para bitcoind...
+Created symlink /etc/systemd/system/multi-user.target.wants/bitcoind.service → /etc/systemd/system/bitcoind.service.
+[✔] Servicio systemd creado y habilitado.
+
+[+] Generando credenciales RPC...
+[✔] RPC configurado correctamente.
+[🔐] Contraseña RPC generada: wvpSSBsfY8CQySF5B5MvaC4LvzFbLn9wt6S20V9_a2E
+[🗂] Archivos de configuración:
+ - /etc/bitcoin/bitcoin.conf
+ - /home/bitcoin/.bitcoin/bitcoin.conf
+
+Seleccione un perfil:
+1) Validador/Operador
+2) Analista de datos
+3) dApp / Wallet Developer
+4) Lightning Operator
+5) Educador / Estudiante
+6) Volver
+0) Configuración estándar (valores por defecto)
+Opción: 
+[⚙️] Aplicando perfil: Analista de datos...
+[✔] Perfil Analista aplicado.
+[+] Perfil aplicado: analista
+[📊] Iniciando monitoreo de recursos...
+[⌛] Esperando a que bitcoin-cli esté disponible en el sistema...
+[✔] bitcoin-cli encontrado.
+[⌛] Esperando a que el nodo inicie la descarga inicial (IBD)...
+[🚀] Nodo en proceso de sincronización. Iniciando registro de métricas...
+[✔] Sincronización completa. Registro finalizado.
+[📊] Monitoreando sistema durante 1 hora (registro cada 30 segundos)...
+[✔] Monitoreo post-sincronización completado. Archivo generado: /var/log/bitcoind-monitor/post_sync_metrics_analista_20250716_032519.csv
