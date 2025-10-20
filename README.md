@@ -58,4 +58,5 @@ El código está organizado en dos componentes principales:
 ### 1. Clonar el repositorio
 ```bash
 git clone https://github.com/joedular/tfm-bitcoin-node.git
-cd tfm-bitcoin-node
+cd tfm-bitcoin-node/source
+sudo ./script_tfm.sh
