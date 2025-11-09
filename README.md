@@ -4,7 +4,7 @@ Este repositorio contiene el código fuente, scripts y datos asociados al Trabaj
 
 **“Automatización de la instalación y monitorización de nodos Bitcoin Core para diferentes perfiles de usuario”**  
 Universidad de Valladolid (UVA) — Máster en Ingeniería Informática  
-Autor: **José Eduardo Ulloa**  
+Autor: **José Ulloa Araya**  
 Año: **2025**
 
 ---
